@@ -1,6 +1,5 @@
-import os
-
+#this PERMANENTLY deletes the running python file when used
 def selfDestruct():
- #this PERMANENTLY deletes the running file
+ from os import path,system
  path = os.path.abspath(__file__)
  os.system("del " + path)
